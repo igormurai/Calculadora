@@ -1,0 +1,118 @@
+
+/* Estilo básico do corpo do documento */
+body {
+    font-family: Arial, sans-serif; /* Define a fonte padrão */
+    background-color: #252525; /* Cor de fundo */
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o padding padrão */
+    box-sizing: border-box; /* Faz com que border e padding sejam incluídos no cálculo da largura/altura */
+}
+
+/* Estilo da estrutura do celular */
+.phone {
+    background-color: #000; /* Cor de fundo */
+    border: 12px solid #242424; /* Borda */
+    border-radius: 40px; /* Bordas arredondadas */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.781); /* Sombra ao redor do celular */
+    max-width: 400px; /* Largura máxima */
+    margin: 100px auto; /* Centraliza na tela com margem superior e inferior */
+    overflow: hidden; /* Esconde o conteúdo que ultrapassa o celular */
+    position: relative; /* Posição relativa para posicionar elementos filhos */
+}
+
+/* Estilo da tela do celular */
+.screen {
+    background-color: #00223d; /* Cor de fundo da tela */
+    padding: 20px; /* Espaçamento interno */
+    border-radius: 20px; /* Bordas arredondadas */
+    height: 100%; /* Altura total */
+}
+
+/* Estilo do visor da calculadora */
+.calculator input[type="text"] {
+    width: calc(100% - 19px); /* Largura total menos 21px para compensar o padding */
+    height: 300px; /* Altura do visor */
+    padding: 20px; /* Espaçamento interno */
+    margin-bottom: 15px; /* Margem abaixo do visor */
+    background-color: #00223d; /* Cor de fundo */
+    border: none; /* Remove a borda */
+    border-radius: 20px; /* Bordas arredondadas */
+    font-size: 29px; /* Tamanho da fonte */
+    color: rgb(255, 255, 255); /* Cor da fonte */
+    text-align: right; /* Alinha o texto à direita */
+}
+
+/* Estilo da área que contém os botões */
+.buttons {
+    display: grid; /* Define um layout de grade */
+    grid-template-columns: repeat(4, 1fr); /* Cria 4 colunas de igual largura */
+    grid-gap: 10px; /* Espaço entre os botões */
+}
+
+/* Estilo dos botões */
+.buttons button {
+    padding: 20px; /* Espaçamento interno */
+    border: none; /* Remove a borda */
+    border-radius: 20px; /* Bordas arredondadas */
+    font-size: 29px; /* Tamanho da fonte */
+    background-color: #003158; /* Cor de fundo */
+    color: #ffffff; /* Cor da fonte */
+    cursor: pointer; /* Muda o cursor para indicar clicabilidade */
+    transition: background-color 0.3s, transform 0.2s; /* Transição suave para cor de fundo e transformação */
+    font-family: helvetica; /* Fonte */
+}
+
+/* Estilo dos botões ao passar o mouse */
+.buttons button:hover {
+    background-color: #001525; /* Cor de fundo mais clara ao passar o mouse */
+    transform: scale(1.08); /* Efeito de zoom */
+}
+
+/* Estilo dos botões ao serem clicados (efeito de pressionamento) */
+.buttons button:active {
+    transform: scale(0.7); /* Reduz o tamanho para 70% */
+}
+
+/* Estilo específico para o botão de limpar (Clear) */
+.clear {
+    grid-column: span 1; /* Ocupa uma coluna */
+    background-color: #4b2724; /* Cor de fundo específica */
+    color: #ff0000; /* Cor da fonte vermelha */
+    border-radius: 20px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno */
+    font-size: 24px; /* Tamanho da fonte */
+    cursor: pointer; /* Muda o cursor para indicar clicabilidade */
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+}
+
+/* Estilo do botão de limpar ao passar o mouse */
+.clear:hover {
+    background-color: #4b2724; /* Mantém a cor de fundo ao passar o mouse */
+    color: #ff0000; /* Mantém a cor da fonte ao passar o mouse */
+}
+
+/* Estilo específico para o botão de igual (Equal) */
+.equal {
+    grid-column: span 1; /* Ocupa uma coluna */
+    background-color: #4caf50; /* Cor de fundo */
+    color: #000000; /* Cor da fonte */
+    transition: background-color 0.3s; /* Transição suave para a cor de fundo */
+}
+
+/* Estilo do botão de igual ao passar o mouse */
+.equal:hover {
+    background-color: #367c34; /* Muda a cor de fundo */
+    color: #00ff37; /* Muda a cor da fonte */
+}
+
+.phone:after {
+    content: ''; /* Adiciona conteúdo antes do elemento */
+    position: absolute; /* Posicionamento absoluto */
+    width: 20px; /* Largura */
+    height: 20px; /* Altura */
+    background-color: #000000; /* Cor de fundo */
+    border-radius: 50%; /* Bordas arredondadas */
+    top: 15px; /* Distância do topo */
+    left: calc(50% - 15px); /* Centraliza na horizontal */
+    z-index: 1; /* Coloca acima dos outros elementos */
+}

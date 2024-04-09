@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="Imagens/calculadora.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Estrutura de um celular com bordas -->
+    <div class="phone">
+        <div class="screen">
+            <!-- Calculadora -->
+            <div class="calculator">
+                <!-- Visor da calculadora -->
+                <input type="text" id="display" readonly>
+                <!-- Botões da calculadora -->
+                <div class="buttons">
+                    <button onclick="clearDisplay()" class="clear">C</button> <!-- Botão para limpar o visor -->
+                    <button onclick="toggleParentheses()">()</button> <!-- Botão para inserir parênteses -->
+                    <button onclick="appendToDisplay('%')">%</button> <!-- Botão para porcentagem -->
+                    <button onclick="appendToDisplay('/')">÷</button> <!-- Botão para divisão -->
+                    <button onclick="appendToDisplay('7')">7</button> <!-- Botão para inserir 7 -->
+                    <button onclick="appendToDisplay('8')">8</button> <!-- Botão para inserir 8 -->
+                    <button onclick="appendToDisplay('9')">9</button> <!-- Botão para inserir 9 -->
+                    <button onclick="appendToDisplay('*')">x</button> <!-- Botão para multiplicação -->
+                    <button onclick="appendToDisplay('4')">4</button> <!-- Botão para inserir 4 -->
+                    <button onclick="appendToDisplay('5')">5</button> <!-- Botão para inserir 5 -->
+                    <button onclick="appendToDisplay('6')">6</button> <!-- Botão para inserir 6 -->
+                    <button onclick="appendToDisplay('-')">-</button> <!-- Botão para subtração -->
+                    <button onclick="appendToDisplay('1')">1</button> <!-- Botão para inserir 1 -->
+                    <button onclick="appendToDisplay('2')">2</button> <!-- Botão para inserir 2 -->
+                    <button onclick="appendToDisplay('3')">3</button> <!-- Botão para inserir 3 -->
+                    <button onclick="appendToDisplay('+')">+</button> <!-- Botão para adição -->
+                    <button onclick="toggleSign()">+/-</button> <!-- Botão para transformar número em negativo ou positivo -->
+                    <button onclick="appendToDisplay('0')">0</button> <!-- Botão para inserir 0 --> 
+                    <button onclick="appendToDisplay(',')">,</button> <!-- Botão para a vírgula -->
+                    <button onclick="calculate()" class="equal">=</button> <!-- Botão para o resultado -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script> <!-- Importa o arquivo JavaScript -->
+</body>
+</html>
