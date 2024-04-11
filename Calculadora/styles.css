@@ -2,7 +2,7 @@
 /* Estilo básico do corpo do documento */
 body {
     font-family: Arial, sans-serif; /* Define a fonte padrão */
-    background-color: #252525; /* Cor de fundo */
+    background-color: #c8c6b9; /* Cor de fundo */
     margin: 0; /* Remove a margem padrão */
     padding: 0; /* Remove o padding padrão */
     box-sizing: border-box; /* Faz com que border e padding sejam incluídos no cálculo da largura/altura */
@@ -55,7 +55,7 @@ body {
     border: none; /* Remove a borda */
     border-radius: 20px; /* Bordas arredondadas */
     font-size: 29px; /* Tamanho da fonte */
-    background-color: #003158; /* Cor de fundo */
+    background-color: #003863; /* Cor de fundo */
     color: #ffffff; /* Cor da fonte */
     cursor: pointer; /* Muda o cursor para indicar clicabilidade */
     transition: background-color 0.3s, transform 0.2s; /* Transição suave para cor de fundo e transformação */
@@ -75,7 +75,7 @@ body {
 
 /* Estilo específico para o botão de limpar (Clear) */
 .clear {
-    grid-column: span 1; /* Ocupa uma coluna */
+    grid-column: span 2; /* Ocupa uma coluna */
     background-color: #4b2724; /* Cor de fundo específica */
     color: #ff0000; /* Cor da fonte vermelha */
     border-radius: 20px; /* Bordas arredondadas */
